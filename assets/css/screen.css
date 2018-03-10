@@ -668,7 +668,11 @@ margin on the iframe, cause it breaks stuff. */
     font-family: "Open Sans", sans-serif;
     color: #fff;
 }
-
+img.ca {
+	opacity:0.65;
+	-moz-opacity: 0.65;
+	filter: alpha(opacity=65);
+}
 .page-description {
     margin: 0;
     font-size: 2rem;
