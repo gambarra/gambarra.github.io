@@ -14,7 +14,7 @@ O EF Core é um ORM(Relational Object Mapping) que permite aos desenvolvedores t
 
 O diagrama abaixo demonstra como o EF Core funciona. 
 
-![](/assets/images/entity/entity.jpg)
+![](/assets/images/entityframework/entity.jpg)
 
 
 Por hoje é só... 
