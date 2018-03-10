@@ -59,7 +59,7 @@ Com a divisão de uma aplicação entre diversos mini blocos há uma necessidade
 
 Um microserviço deve estar focado no domínio do negócio. Assim sendo, deve ser uma função do negócio. Quem conhece o padrão de desenvolvimento DDD sabe que o domínio é o coração de uma aplicação. Utilizando um padrão distribuído como microserviços não é diferente. O conceito base que alicerça este pensamento é o que no DDD chamamos de Bounded Context (ou contextos delimitados).  Os contextos delimitados servem para refatorar um grande domínio em pequenos conjuntos de domínios que unidos representam o modelo de negócio de uma aplicação ou empresa. E é exatamente essa característica um dos pontos fundamentais no modelo de microserviços.
 
-### Abaixo segue uma imagem demonstrando como funciona uma arquitetura focada em microserviços. 
+# Abaixo segue uma imagem demonstrando como funciona uma arquitetura focada em microserviços. 
 
 ![](/assets/images/\microoservice/micro-servicos.png)
 
