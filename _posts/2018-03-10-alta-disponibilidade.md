@@ -66,3 +66,32 @@ Um microserviço deve estar focado no domínio do negócio. Assim sendo, deve se
 Observe que como descrito acima, cada serviço é responsável por seu próprio sistema de armazenamento.
 
 Outro ponto importante é que geralmente há uma camada designada a orquestrar esses serviços. Essa orquestração pode ser realizada através uma API de orquestração ou de um Service BUS.
+
+<span style="color:blue">Quais as vantagens de utilizar microserviços?</span>
+
+Além de ser uma arquitetura utilizada em grandes cases de sucesso, ela traz algumas vantagens:
+
+* Diminui as dependências entre equipes, resultando em um código entregue mais rápido para produção;
+* Permite que muitas iniciativas sejam executadas em paralelo;
+* Suporta múltiplas tecnologias, linguagens de programação e frameworks;
+* Permite que a degradação do serviço seja mais branda;
+* Promove a facilidade de inovação através de código descartável – é fácil falhar e seguir em frente.
+
+Como cada serviço que compõe o software final é pequeno e independente, os ajustes são tarefas mais simples e menos impactantes. Mesmo que ocorra a substituição dele por uma versão mais nova, que altera inclusive a linguagem de programação. No entanto, a equipe de desenvolvimento deve respeitar a regra de negócio contida no serviço e o seu contrato. Isso cria oportunidades para mais equipes estarem construindo de forma paralela a mesma solução.
+
+<span style="color:blue">Quais as desvantagens de utilizar microserviços?</span>
+
+Como no mundo computacional não existe uma solução perfeita e nem ideal para todos os cenários, os microserviços também podem ter suas desvantagens:
+
+* Desenvolvedores devem lidar com uma complexidade adicional de criar e manter um sistema distribuído;
+* A maioria das IDE são orientadas para construção de aplicativos monolíticos e não fornecem de maneira simples suporte a aplicativos distribuídos;
+* Na produção, há também a complexidade de implantar e gerenciar um sistema de muitos serviços;
+* Dificuldade de um programador iniciante conseguir entender a estrutura do aplicativo, pois sistemas monolíticos são muito mais fáceis de serem entendidos.
+
+<span style="color:blue">Quando devo utilizar microserviços?</span>
+
+Essa é uma dúvida recorrente no começo do planejamento de uma nova aplicação ou se deseja a migração de um sistema monolítico para microserviços. Não há uma resposta precisa. É necessário analisar os recursos que a equipe dispõe e a previsão do crescimento e amplitude do aplicativo. Geralmente, aplicações monolíticas tendem a ser mais vantajosas quando o escopo da aplicação é menor. Entretanto, com o crescimento deste escopo, a arquitetura baseada em microserviço tem se mostrado mais produtiva.
+
+Alguns cases de sucesso como Netflix e Amazon estão aí para nos mostrar que microserviços não são o futuro. Eles são uma realidade cada vez mais presente.  Cabe ao arquiteto de cada empresa decidir qual o melhor padrão adotado para o cenário que deseja atacar.  Para saber mais, Martin Fowler explica de forma detalhada como fazer essa análise em seu artigo intitulado [Microservices](https://martinfowler.com/articles/microservices.html).
+
+Por hoje é só... 
