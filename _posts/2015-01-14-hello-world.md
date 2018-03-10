@@ -3,7 +3,7 @@ layout: post
 title:  "Hello World!"
 description: "Artigo de boas vindas ao site pessoal de Jordan Kobellarz"
 date:   2015-01-14 12:25:00
-categories: ['jordan']
+categories: ['Gambarra']
 ---
 
 Como todo site pessoal, é de costume darmos as boas vindas ao público e aproveitar
