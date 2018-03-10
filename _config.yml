@@ -1,16 +1,27 @@
 name: Gambarra
-description: Consultoria e treinamentos
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+description: Consultoria e Treinamentos
 
 markdown: kramdown
-highlighter: pygments
-logo: false
+highlighter: rouge
 paginate: 15
 baseurl: /
-domain_name: 'http://yourblog-domain.com'
-google_analytics: 'UA-XXXXXXXX-X'
-gems: [jekyll-paginate]
+domain_name: 'http://gambarra.github.com'
+google_analytics: 'UA-58555211-1'
 
 # Details for the RSS feed generator
-url:            'blog url'
-author:         'Your Name'
+url: 'http://gambarra.github.com'
+
+author:
+    name: Thiago Gambarra
+    thumb: /assets/images/profile.jpg
+    bio: Desenvolvedor de Software e cozinheiro amador nas horas vagas.
+    url:
+        site: 'http://gambarra.net'
+        facebook: 'https://www.facebook.com/thiago.daluzgambarra'
+        linkedin: 'https://www.linkedin.com/in/thiago-gambarra-258b4329/'
+        email: 'thiago.gambarra@gmail.com'
+
+urls:
+    about: /sobre
+
+img_path: /assets/images/

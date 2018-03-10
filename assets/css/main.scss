@@ -8,6 +8,13 @@
 	display:inline;
 }
 
+.post-content, .archive{
+    margin-top: 40px !important
+}
+.post-footer, #disqus_thread{
+    margin-top: 100px;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 	"syntax"

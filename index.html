@@ -1,29 +1,29 @@
 ---
 layout: default
 title: Home
-cover: false
+cover: '/assets/images/forest.png'
 about: 'about.html'
 ---
 
 <header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
     <nav class="main-nav overlay clearfix">
-            {% if page.logo %}
+            {% if site.author.thumb %}
                 <a class="blog-logo" href="{{ site.baseurl }}">
-                    <img src="{{ page.logo }}" alt="Blog Logo" />
+                    <img src="{{ site.author.thumb }}" alt="foto do perfil de {{site.author.name}}" />
                 </a>
             {% endif %}
-        <a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Subscribe</a>
+           <!-- <a class="subscribe-button icon-feed" href="{{ site.baseurl }}rss.xml">Feed RSS</a> -->
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">
-            <h1 class="page-title">{{ site.name }}</h1>
-            <h2 class="page-description">
+            <h1 class="page-title" style="text-shadow:1px 1px 3px #111">{{ site.name }}</h1>
+            <h2 class="page-description" style="text-shadow:1px 1px 3px #111">
                 {% if site.description %} {{ site.description }}. {% endif %}
-                {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> About me </a> {% endif %}
+                {% if site.urls.about %} <a style="color:#fff" href='{{ site.urls.about }}'> Sobre </a> {% endif %}
             </h2>
         </div>
     </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Role a página</span></a>
 </header>
 
 
@@ -45,8 +45,10 @@ about: 'about.html'
         </section>
         <footer class="post-meta">
             {% if site.author %}
-                <img class="author-thumb" src="/assets/images/profile.png" alt="Author's profile picture" nopin="nopin" />
-                {{ site.author }}
+                <a href="{{site.urls.about}}">
+                    <img class="author-thumb" src="{{site.author.thumb}}" alt="imagem do perfil de {{site.author.name}}" nopin="nopin" />
+                    {{ site.author.name }}
+                </a>
             {% endif %}
             {% if post.categories.size > 0 %} 
                 {{ post.categories | array_to_sentence_string | prepend: 'on ' }} 
