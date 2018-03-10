@@ -9,6 +9,8 @@ categories: ['Gambarra']
 Atualmente, termos como escalabilidade, computação na nuvem e DevOps estão em alta. Mas como deixar suas aplicações altamente escaláveis e mutáveis? Este artigo tem o intuito de demonstrar como os microserviços podem ajudar a alcançar esses objetivos.
 No passado, muitas aplicações eram construídas de forma Monolítica. Todo o negócio estava embutido em um único programa e, às vezes, até distribuídos em camadas. Porém, sempre com um alto acoplamento entre esses componentes. Um exemplo clássico disso são as aplicações construídas no modelo MVC (Model View Controller).
 
+![Aplicação MVC](/assets/images/\microoservice/escalabilidade.gif)
+
 {% highlight javascript linenos=table %}
 console.log('Hello World!');
 {% endhighlight %}
