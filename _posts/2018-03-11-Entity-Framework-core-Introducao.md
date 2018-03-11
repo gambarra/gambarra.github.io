@@ -22,20 +22,20 @@ Ao longo dessa série iremos construir um projeto onde será demonstrado como ut
 
 Criando a estrutura do projeto
 
-1. Abra o Visual Studio e crie um novo Project...
-2. Selecione a opção Other Project Types.. Visual Studio Solutions.. Blank Solution
+1. Abra o `Visual Studio` e crie um novo `Project...`
+2. Selecione a opção `Other Project Types..` `Visual Studio Solutions..` `Blank Solution`
 3. Renomei o projeto para LojaVirtualDemo (Ou outro nome da sua escolha)
-4. Clique com o botão direito do mouse sobre a Solution e adicione dois projetos do typo Class Library.. LojaVirtualDemo.Domain e LojaVirtualDemo.Repository
+4. Clique com o botão direito do mouse sobre a Solution e adicione dois projetos do typo `Class Library..` LojaVirtualDemo.Domain e LojaVirtualDemo.Repository
 
 Adicionando o EF Core ao Projeto
 
 Existem duas formas de adicionar o EF Core ao projeto
 
-1. Através de linha de comando no Package Manager Console
+1. Através de linha de comando no `Package Manager Console`
 
 ![](/assets/images/entityframework/installpackageefcore.jpg)
 
-2. Instalando o pacote através do Package Manager
+2. Instalando o pacote através do `Package Manager`
 
 ![](/assets/images/entityframework/installmanagerpackageefcore.jpg)
 
@@ -43,51 +43,46 @@ Existem duas formas de adicionar o EF Core ao projeto
 Agora iremos criar a estrutura do domínio da nossa aplicação. Adicione as seguintes classes ao domínio.
 
 **Produto**	
-{% highdark csharp linenos=table %}
+{% highlight csharp linenos=table %}
     public class Produto
     {
         public int ProdutoId { get; set; }
         public string Name { get; set; }
         public double Valor { get; set; }
-    }	
-{% endhighdark %}
+    }{% endhighlight %}
 
 
 **ItemCarrinho**
-~~~~
+{% highlight csharp linenos=table %}
     public class ItemCarrinho
     {
         public Produto Produto { get; set; }
         public int Quantidade { get; set; }
-    }
-~~~~
+    }{% endhighlight %}
 
 **Carrinho**	
-~~~~
+{% highlight csharp linenos=table %}
     public class Carrinho
     {
         public IList<ItemCarrinho> Itens { get; set; }
-    }	
-~~~~
+    }{% endhighlight %}
 
 **Comprador**
-~~~~
+{% highlight csharp linenos=table %}
     public class Comprador
     {
         public int CompradorId { get; set; }
         public string Nome { get; set; }
-    }
-~~~~
+    }{% endhighlight %}
 
 **Pedido**
-~~~~
+{% highlight csharp linenos=table %}
     public class Pedido
     {
         public int PedidoId { get; set; }
         public Comprador Comprador { get; set; }
         public DateTime DataCompra { get; set; }
         public Carrinho Carrinho { get; set; }
-    }
-~~~~
+    }{% endhighlight %}
 
 Por hoje é só, continuamos no próximo artigo...
