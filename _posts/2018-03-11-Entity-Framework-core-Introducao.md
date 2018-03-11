@@ -16,7 +16,7 @@ O diagrama abaixo demonstra como o EF Core funciona.
 
 ![](/assets/images/entityframework/entity.jpg)
 
-# Agora veremos na prática o EF Core
+### Agora veremos na prática o EF Core
 
 Ao longo dessa série iremos construir um projeto onde será demonstrado como utilizar o EF Core. Estou utilizando o [Visual Studio 2017](https://www.visualstudio.com/pt-br/downloads/). 
 
