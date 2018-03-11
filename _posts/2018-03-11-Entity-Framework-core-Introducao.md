@@ -33,11 +33,11 @@ Existem duas formas de adicionar o EF Core ao projeto
 
 1. Através de linha de comando no Package Manager Console
 
-![](/assets/images/entityframework/install_package_ef_core.jpg)
+![](/assets/images/entityframework/installpackageefcore.jpg)
 
 2. Instalando o pacote através do Package Manager
 
-![](/assets/images/entityframework/install_manager_package_ef_core.jpg)
+![](/assets/images/entityframework/installmanagerpackageefcore.jpg)
 
 
 Agora iremos criar a estrutura do domínio da nossa aplicação. Adicione as seguintes classes ao domínio.
