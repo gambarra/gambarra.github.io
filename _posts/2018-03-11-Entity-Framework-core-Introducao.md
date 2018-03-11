@@ -42,42 +42,45 @@ Existem duas formas de adicionar o EF Core ao projeto
 
 Agora iremos criar a estrutura do domínio da nossa aplicação. Adicione as seguintes classes ao domínio.
 
-**Produto**
-```csharp
+**Produto**	
+~~~~
     public class Produto
     {
         public int ProdutoId { get; set; }
         public string Name { get; set; }
         public double Valor { get; set; }
     }
-```
+	
+~~~~
+
 **ItemCarrinho**
-```csharp
+~~~~
     public class ItemCarrinho
     {
         public Produto Produto { get; set; }
         public int Quantidade { get; set; }
     }
-```
-**Carrinho**
-```csharp
+~~~~
+
+**Carrinho**	
+~~~~
     public class Carrinho
     {
         public IList<ItemCarrinho> Itens { get; set; }
-    }
-```
+    }	
+~~~~
 
 **Comprador**
-```csharp
+~~~~
     public class Comprador
     {
         public int CompradorId { get; set; }
         public string Nome { get; set; }
     }
-```
+~~~~
 
 **Pedido**
-```csharp
+~~~~
     public class Pedido
     {
         public int PedidoId { get; set; }
@@ -85,6 +88,6 @@ Agora iremos criar a estrutura do domínio da nossa aplicação. Adicione as seg
         public DateTime DataCompra { get; set; }
         public Carrinho Carrinho { get; set; }
     }
-```
+~~~~
 
 Por hoje é só, continuamos no próximo artigo...
