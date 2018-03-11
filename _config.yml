@@ -6,17 +6,17 @@ highlighter: rouge
 paginate: 15
 baseurl: /
 domain_name: 'http://gambarra.github.com'
-google_analytics: 'UA-58555211-1'
+google_analytics: 'UA-115519525-1'
 
 # Details for the RSS feed generator
-url: 'http://gambarra.github.com'
+url: 'http://gambarra.com'
 
 author:
     name: Thiago Gambarra
     thumb: /assets/images/profile.jpg
     bio: Desenvolvedor de Software e cozinheiro amador nas horas vagas.
     url:
-        site: 'http://gambarra.net'
+        site: 'http://gambarra.com'
         facebook: 'https://www.facebook.com/thiago.daluzgambarra'
         linkedin: 'https://www.linkedin.com/in/thiago-gambarra-258b4329/'
         email: 'thiago.gambarra@gmail.com'
