@@ -16,7 +16,7 @@ O diagrama abaixo demonstra como o EF Core funciona.
 
 ![](/assets/images/entityframework/entity.jpg)
 
-## Agora veremos na prática o EF Core
+# Agora veremos na prática o EF Core
 
 Ao longo dessa série iremos construir um projeto onde será demonstrado como utilizar o EF Core. Estou utilizando o [Visual Studio 2017](https://www.visualstudio.com/pt-br/downloads/). 
 
@@ -26,8 +26,6 @@ Criando a estrutura do projeto
 2. Selecione a opção Other Project Types.. Visual Studio Solutions.. Blank Solution
 3. Renomei o projeto para LojaVirtualDemo (Ou outro nome da sua escolha)
 4. Clique com o botão direito do mouse sobre a Solution e adicione dois projetos do typo Class Library.. LojaVirtualDemo.Domain e LojaVirtualDemo.Repository
-
-![](/assets/images/entityframework/solution_image_1.jpg)
 
 Adicionando o EF Core ao Projeto
 
