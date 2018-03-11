@@ -43,7 +43,7 @@ Existem duas formas de adicionar o EF Core ao projeto
 Agora iremos criar a estrutura do domínio da nossa aplicação. Adicione as seguintes classes ao domínio.
 
 **Produto**	
-{% highlight csharp linenos=table %}
+{% highlight csharp startinline=true linenos=table %}
     public class Produto
     {
         public int ProdutoId { get; set; }
