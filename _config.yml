@@ -25,3 +25,6 @@ urls:
     about: /sobre
 
 img_path: /assets/images/
+
+plugins:
+    - jekyll-seo-tag
