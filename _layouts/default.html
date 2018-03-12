@@ -6,7 +6,7 @@
 
     <title>{% if page.title %}{{ page.title }}{% endif %}</title>
     <meta name="description" content="{{page.description}}" />
-
+    
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
 
     <meta name="google-site-verification" content="ewJ_v3AS2ztvkhJgDo_Mew5et5Gh9Jrrwp2szxiU1bI" />
+
+    {% seo %}
 
 </head>
 <body class="{% if page.post_class %}{{page.post_class}}{% else %}home-template{% endif %}">
